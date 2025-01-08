@@ -127,3 +127,11 @@
     需要Inv_hvt与PP_MUX
   
   `IPP_MUX.sp`
+
+## Booth阵列PP_FA单元，PP_FA
+
+* hvt
+  
+    需要FullAdder_hvt_1与PP_MUX
+  
+  `PP_FA.sp`
