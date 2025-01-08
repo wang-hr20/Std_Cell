@@ -32,15 +32,15 @@
 
   `TranGate_hvt.sp`
 
-## 与非门，AN
+## 与非门，ND
 
-* lvt，两输入与门
+* lvt，两输入与非门
 
   静态CMOS实现
 
   `AN_lvt_2.sp`
 
-* hvt，两输入与门
+* hvt，两输入与非门
 
   静态CMOS实现
 
