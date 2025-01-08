@@ -143,3 +143,11 @@
     需要FullAdder_hvt_1与PP_MUX
   
   `PP_FA.sp`
+
+## Booth阵列PP_HA单元，PP_HA
+
+* hvt
+  
+    需要HalfAdder_hvt_1与PP_MUX
+  
+  `PP_HA.sp`
