@@ -38,13 +38,13 @@
 
   静态CMOS实现
 
-  `AN_lvt_2.sp`
+  `ND_lvt_2.sp`
 
 * hvt，两输入与非门
 
   静态CMOS实现
 
-  `AN_hvt_2.sp`
+  `ND_hvt_2.sp`
 
 ## 与门，And
 
@@ -53,6 +53,14 @@
   传输门逻辑实现，需要A，B，B'
 
   `And_hvt.sp`
+
+## 或非门，NR
+
+* lvt，两输入或非门
+
+ 静态CMOS实现
+
+ `NR_lvt_2.sp`
 
 ## 异或门，XR
 
