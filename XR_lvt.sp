@@ -9,6 +9,6 @@ XG_3 A_bar P B B_bar TranGate_lvt f=f
 XG_4 A P_bar B B_bar TranGate_lvt f=f
 
 X_inv1 P out_bar Inv_lvt f=f
-X_inv2 P_bar_inv out Inv_lvt f=f
+X_inv2 P_bar out Inv_lvt f=f
 
 .ends XR_lvt
