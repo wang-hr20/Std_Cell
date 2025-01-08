@@ -29,6 +29,14 @@
 
   `TranGate_hvt.sp`
 
+## 与门，AN
+
+* lvt，两输入与门
+
+  静态CMOS实现
+
+  `AN_lvt_2.sp`
+
 ## 异或门，XR
 
 * lvt
