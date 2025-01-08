@@ -12,6 +12,9 @@
 
   `Inv_lvt.sp`
 
+* hvt
+
+  `Inv_hvt.sp`
 
 ## 传输门，TranGate
 
@@ -36,6 +39,20 @@
   静态CMOS实现
 
   `AN_lvt_2.sp`
+
+* hvt，两输入与门
+
+  静态CMOS实现
+
+  `AN_hvt_2.sp`
+
+## 与门，And
+
+* hvt，两输入与门
+
+  传输门逻辑实现，需要A，B，B'
+
+  `And_hvt.sp`
 
 ## 异或门，XR
 
