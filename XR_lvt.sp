@@ -1,4 +1,4 @@
-.subckt XR_lvt A A_bar B B_bar out out_bar Wmin=120n Lmin=40n f=1
+.subckt XR_lvt A A_bar B B_bar out out_bar W=120n L=40n f=1
 ** CPL logic, XOR gate, lvt
 .include ./Inv_lvt.sp
 .include ./TranGate_lvt.sp
