@@ -151,3 +151,11 @@
     需要HalfAdder_hvt_1与PP_MUX
   
   `PP_HA.sp`
+
+## Booth阵列IPP_HA单元，IPP_HA
+
+* hvt
+  
+    需要HalfAdder_hvt_1与IPP_MUX
+  
+  `IPP_HA.sp`
