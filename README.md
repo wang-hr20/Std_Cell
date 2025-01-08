@@ -45,6 +45,12 @@
   静态CMOS实现
 
   `ND_hvt_2.sp`
+  
+* lvt，三输入与非门
+  
+  静态CMOS实现
+  
+  `AN_lvt_3.sp`
 
 ## 与门，And
 
@@ -159,3 +165,11 @@
     需要HalfAdder_hvt_1与IPP_MUX
   
   `IPP_HA.sp`
+
+## Booth编码器，Booth_Encoder
+
+* lvt
+
+    需要inv_lvt、XR_lvt、AN_lvt_2（2输入与非门，名字可能会误导）、AN_lvt_3（三输入与非门）
+
+  `Booth_Encoder.sp`
