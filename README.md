@@ -41,4 +41,14 @@
 
   功能已验证
 
+## 单比特全加器，FullAdder
 
+* svt
+
+  基于传输门逻辑，需要差分输入
+
+  需要Inv与TranGate
+
+  `FullAdder_1.sp`
+
+  已验证
