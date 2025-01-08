@@ -32,7 +32,7 @@
 
   `TranGate_hvt.sp`
 
-## 与门，AN
+## 与非门，AN
 
 * lvt，两输入与门
 
