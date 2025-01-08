@@ -52,3 +52,27 @@
   `FullAdder_1.sp`
 
   已验证
+  
+## Booth阵列ADD单元，ADD
+
+* hvt
+  
+    需要Inv_hvt
+  
+  `ADD.sp`
+  
+## Booth阵列PP_MUX单元，PP_MUX
+
+* hvt
+  
+    需要Inv_hvt
+  
+  `PP_MUX.sp`
+  
+## Booth阵列IPP_MUX单元，IPP_MUX
+
+* hvt
+  
+    需要Inv_hvt与PP_MUX
+  
+  `IPP_MUX.sp`
