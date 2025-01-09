@@ -22,7 +22,7 @@ X_Mn_p2 m       slct_p2     X_im1_inv   gnd!    nlvt11ll_ckt    W='W*f'  L=L
 ** output inverter
 X_I3    m       PP                              Inv_nlph         W=W   L=L   f=f
 
-X_Mp    m       PP          vdd!        vdd!    plvt11ll_ckt    W='W*f*0.5'  L=L
+X_Mp    m       PP          vdd!        vdd!    plvt11ll_ckt    W='W*f'  L=L
 
 X_I4    PP      IPP                             Inv_hvt         W=W   L=L   f=f
 
