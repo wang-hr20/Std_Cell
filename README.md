@@ -236,3 +236,17 @@
     需要inv_lvt、XR_lvt、AN_lvt_2（2输入与非门，名字可能会误导）、AN_lvt_3（三输入与非门）
 
   `Booth_Encoder.sp`
+
+## 4-bit超前进位加法器，CLA
+
+  需要NR_lvt_2、ND_lvt_2、Inv_lvt、XR_lvt
+
+  `CLA_4.sp`
+
+  测例中最大延时~120ps（TT/1.0V）/~170ps（SS/1.0V）
+
+## 8-bit分段超前进位加法器，R_CLA
+
+  需要CLA_4
+
+  `R_CLA_8.sp`
