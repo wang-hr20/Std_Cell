@@ -195,7 +195,7 @@
 
 * hvt
   
-    需要Inv_hvt
+    需要Inv_hvt, Inv_nlph
   
   `ADD.sp`
   
@@ -203,7 +203,7 @@
 
 * hvt
   
-    需要Inv_hvt
+    需要Inv_hvt, Inv_nlph
   
   `PP_MUX.sp`
   
