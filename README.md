@@ -250,3 +250,9 @@
   需要CLA_4
 
   `R_CLA_8.sp`
+
+## 8-bit行波加法器，RCA
+
+  需要FullAdder_1
+
+  `RippleCarryAdder_8.sp`
