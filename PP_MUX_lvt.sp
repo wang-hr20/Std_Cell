@@ -1,8 +1,8 @@
-** PP-MUX module in array
+** PP-MUX module in array, lvt
 ** slct 0 ~ 4 : -1X, -2X, 0X, 1X, 2X
 ** mos d g s b
 
-.subckt PP_MUX X_i X_im1 slct_m1 slct_m2 slct_0 slct_p1 slct_p2 PP IPP W=120n L=40n f=1
+.subckt PP_MUX_lvt X_i X_im1 slct_m1 slct_m2 slct_0 slct_p1 slct_p2 PP IPP W=120n L=40n f=1
 
 ** define dependencies
 .include ./Inv_nlph.sp
@@ -26,4 +26,4 @@ X_Mp    m       PP          vdd!        vdd!    plvt11ll_ckt    W='W*f'  L=L
 
 X_I4    PP      IPP                             Inv_lvt         W=W   L=L   f=f
 
-.ends PP_MUX
+.ends PP_MUX_lvt
