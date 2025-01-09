@@ -56,7 +56,7 @@
 
 * hvt，两输入与门
 
-  传输门逻辑实现，需要A，B，B'
+  传输门逻辑实现，需要A, A', B, B'
 
   `And_hvt.sp`
 
@@ -117,6 +117,10 @@
   需要Inv_hvt与TranGate_hvt
 
   `FullAdder_hvt_1.sp`
+
+  去掉进位传播逻辑，用于输出最高bit
+
+  `FullAdder_NoCout_hvt_1.sp`
   
 ## Booth阵列ADD单元，ADD
 
@@ -149,6 +153,10 @@
     需要FullAdder_hvt_1与PP_MUX
   
   `PP_FA.sp`
+
+    去掉进位传播逻辑，需要FullAdder_NoCout_hvt_1
+
+  `PP_FA_NoCout.sp`
 
 ## Booth阵列PP_HA单元，PP_HA
 
