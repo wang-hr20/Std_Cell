@@ -135,7 +135,7 @@ Vslct_0_p1  slct_0_p1   0 0 dc=0
 Vslct_0_p2  slct_0_p2   0 pulse(0 pwsp 'tper-ts/2' ts ts 'tper/2-ts' tper) dc=0
 
 ** add simulation command
-.tran 1n 'tper*101'
+.tran 1n 'tper*21'
 .op
 
 ** add output
