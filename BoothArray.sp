@@ -17,6 +17,7 @@
 .include ./PP_HA.sp
 .include ./IPP_HA.sp
 .include ./PP_FA.sp
+.include ./PP_FA_NoCout.sp
 
 ** define constant output ports
 R_B1        gnd! B1     r=0
