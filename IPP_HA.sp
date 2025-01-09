@@ -13,6 +13,6 @@
 X_IPP_MUX X_i X_im1 slct_m1 slct_m2 slct_0 slct_p1 slct_p2 IPP PP IPP_MUX W=W L=L f=f
 
 ** FA module
-X_HA IPP PP Sum_in Sum_in_bar Carry_in Carry_in_bar Sum_out Sum_out_bar Carry_out Carry_out_bar HalfAdder_hvt_1 W=W L=L f=f
+X_HA IPP PP Sum_in Sum_in_bar Sum_out Sum_out_bar Carry_out Carry_out_bar HalfAdder_hvt_1 W=W L=L f=f
 
 .ends IPP_HA
