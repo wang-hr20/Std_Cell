@@ -24,7 +24,11 @@
   功能已验证
   条件同lvt，tp=8ps，p=0.25uW，cgg=0.12fF Cdd=0.04fF vth=630mV
 
+* nmos lvt pmos hvt
 
+  `Inv_nlph.sp`
+
+  size of nmos : pmos = 1 : 1
 
 ## 传输门，TranGate
 
