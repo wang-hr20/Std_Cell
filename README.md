@@ -12,9 +12,19 @@
 
   `Inv_lvt.sp`
 
+  功能已验证
+  @tt,25℃,Vdd=1V,1GHz,输入翻转时间10ps,单位尺寸：负载2倍尺寸反相器
+  tp=5ps, 翻转时间10ps,p=0.26uW
+  单位尺寸饱和区 Cgg=0.16fF Cdd=0.06fF vth=480mV
+
 * hvt
 
   `Inv_hvt.sp`
+
+  功能已验证
+  条件同lvt，tp=8ps，p=0.25uW，cgg=0.12fF Cdd=0.04fF vth=630mV
+
+
 
 ## 传输门，TranGate
 
