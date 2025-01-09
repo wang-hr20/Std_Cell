@@ -48,11 +48,22 @@
   
 * lvt，三输入与非门
   
-  静态CMOS实现
+  静态互补CMOS实现
   
-  `AN_lvt_3.sp`
+  `ND_lvt_3.sp`
 
-## 与门，And
+* lvt，四输入与非门
+  
+  静态互补CMOS实现
+  
+  `ND_lvt_4.sp`
+
+## 与门，AN/And
+* lvt，两输入与门
+
+  静态互补CMOS逻辑实现
+
+  `AN_lvt_2.sp`
 
 * hvt，两输入与门
 
@@ -60,13 +71,57 @@
 
   `And_hvt.sp`
 
+* lvt，三输入与门
+
+  静态互补CMOS逻辑实现
+
+  `AN_lvt_3.sp`
+
+* lvt，四输入与门
+
+  静态互补CMOS逻辑实现
+
+  `AN_lvt_4.sp`
+
 ## 或非门，NR
 
 * lvt，两输入或非门
 
- 静态CMOS实现
+  静态CMOS实现
 
- `NR_lvt_2.sp`
+  `NR_lvt_2.sp`
+
+* lvt，三输入或非门
+
+  静态CMOS实现
+
+  `NR_lvt_3.sp`
+
+* lvt，四输入或非门
+
+  静态CMOS实现
+
+  `NR_lvt_4.sp`
+
+## 或门，OR
+
+* lvt，两输入非门
+
+  静态CMOS实现
+
+  `OR_lvt_2.sp`
+
+* lvt，三输入非门
+
+  静态CMOS实现
+
+  `OR_lvt_3.sp`
+
+* lvt，四输入非门
+
+  静态CMOS实现
+
+  `OR_lvt_4.sp`
 
 ## 异或门，XR
 
