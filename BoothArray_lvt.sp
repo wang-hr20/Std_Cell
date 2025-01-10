@@ -17,6 +17,7 @@
 .include ./PP_HA_lvt.sp
 .include ./IPP_HA_lvt.sp
 .include ./PP_FA_lvt.sp
+.include ./PP_FA_out_lvt.sp
 .include ./PP_FA_NoCout_lvt.sp
 
 ** define constant output ports
@@ -103,13 +104,13 @@ X_IPP_MUX_l3_10 gnd! gnd! slct_3_m1 slct_3_m2 slct_3_0 slct_3_p1 slct_3_p2 s_l3_
 ** level 4
 ** contains 8 PP_FA
 
-X_PP_FA_l4_1    s_l3_1 s_l3_1_bar c_l3_1 c_l3_1_bar x0 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B8 B8_bar A9 A9_bar PP_FA_lvt W=W L=L f=f4
-X_PP_FA_l4_2    s_l3_2 s_l3_2_bar c_l3_2 c_l3_2_bar x1 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B9 B9_bar A10 A10_bar PP_FA_lvt W=W L=L f=f4
-X_PP_FA_l4_3    s_l3_3 s_l3_3_bar c_l3_3 c_l3_3_bar x2 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B10 B10_bar A11 A11_bar PP_FA_lvt W=W L=L f=f4
-X_PP_FA_l4_4    s_l3_4 s_l3_4_bar c_l3_4 c_l3_4_bar x3 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B11 B11_bar A12 A12_bar PP_FA_lvt W=W L=L f=f4
-X_PP_FA_l4_5    s_l3_5 s_l3_5_bar c_l3_5 c_l3_5_bar x4 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B12 B12_bar A13 A13_bar PP_FA_lvt W=W L=L f=f4
-X_PP_FA_l4_6    s_l3_6 s_l3_6_bar c_l3_6 c_l3_6_bar x5 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B13 B13_bar A14 A14_bar PP_FA_lvt W=W L=L f=f4
-X_PP_FA_l4_7    s_l3_7 s_l3_7_bar c_l3_7 c_l3_7_bar x6 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B14 B14_bar A15 A15_bar PP_FA_lvt W=W L=L f=f4
+X_PP_FA_l4_1    s_l3_1 s_l3_1_bar c_l3_1 c_l3_1_bar x0 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B8 B8_bar A9 A9_bar PP_FA_out_lvt W=W L=L f=f4
+X_PP_FA_l4_2    s_l3_2 s_l3_2_bar c_l3_2 c_l3_2_bar x1 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B9 B9_bar A10 A10_bar PP_FA_out_lvt W=W L=L f=f4
+X_PP_FA_l4_3    s_l3_3 s_l3_3_bar c_l3_3 c_l3_3_bar x2 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B10 B10_bar A11 A11_bar PP_FA_out_lvt W=W L=L f=f4
+X_PP_FA_l4_4    s_l3_4 s_l3_4_bar c_l3_4 c_l3_4_bar x3 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B11 B11_bar A12 A12_bar PP_FA_out_lvt W=W L=L f=f4
+X_PP_FA_l4_5    s_l3_5 s_l3_5_bar c_l3_5 c_l3_5_bar x4 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B12 B12_bar A13 A13_bar PP_FA_out_lvt W=W L=L f=f4
+X_PP_FA_l4_6    s_l3_6 s_l3_6_bar c_l3_6 c_l3_6_bar x5 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B13 B13_bar A14 A14_bar PP_FA_out_lvt W=W L=L f=f4
+X_PP_FA_l4_7    s_l3_7 s_l3_7_bar c_l3_7 c_l3_7_bar x6 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B14 B14_bar A15 A15_bar PP_FA_out_lvt W=W L=L f=f4
 X_PP_FA_l4_8    s_l3_8 s_l3_8_bar c_l3_8 c_l3_8_bar x7 gnd! slct_4_m1 slct_4_m2 slct_4_0 slct_4_p1 slct_4_p2 B15 B15_bar PP_FA_NoCout_lvt W=W L=L f=f4
 
 .ends BoothArray_lvt

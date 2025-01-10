@@ -16,6 +16,6 @@ XG_7 P_bar S_inv Cin_bar Cin TranGate_lvt W=W L=L f=f
 XG_8 P S_bar_inv Cin_bar Cin TranGate_lvt W=W L=L f=f
 
 X_inv1 S_inv S Inv_lvt W=W L=L f=f
-X_inv2 S_bar_inv S_bar Inv_lvt W=W L=L f=f
+X_inv2 S_bar_inv S_bar Inv_lvt W=W L=L f='f*2'
 
 .ends FullAdder_NoCout_lvt_1

@@ -28,6 +28,6 @@ X_TG_p2   vdd!  m       slct_p2     slct_p2_inv     TranGate_lvt    W=W   L=L   
 
 X_I3    m       out                 Inv_lvt      W=W    L=L f=f
 
-X_I4    out     out_bar             Inv_lvt      W=W    L=L f=f
+X_I4    out     out_bar             Inv_lvt      W=W    L=L f='f*2'
 
 .ends ADD_lvt
