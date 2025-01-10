@@ -13,8 +13,10 @@
 ** define dependencies
 .include ./ADD_lvt.sp
 .include ./PP_MUX_lvt.sp
+.include ./PP_MUX_out_lvt.sp
 .include ./IPP_MUX_lvt.sp
 .include ./PP_HA_lvt.sp
+.include ./PP_HA_out_lvt.sp
 .include ./IPP_HA_lvt.sp
 .include ./PP_FA_lvt.sp
 .include ./PP_FA_out_lvt.sp
@@ -31,8 +33,8 @@ R_A8_bar    vdd! A8_bar r=0
 ** intermidaites: s_l0[10:1], s_l0_bar[10:1]
 
 X_ADD_l0_0      slct_0_m1 slct_0_m2 slct_0_0 slct_0_p1 slct_0_p2 A0 A0_bar ADD_lvt W=W L=L f=f0
-X_PP_MUX_l0_1   x0 gnd! slct_0_m1 slct_0_m2 slct_0_0 slct_0_p1 slct_0_p2 B0 B0_bar PP_MUX_lvt W=W L=L f=f0
-X_PP_MUX_l0_2   x1 x0 slct_0_m1 slct_0_m2 slct_0_0 slct_0_p1 slct_0_p2 A1 A1_bar PP_MUX_lvt W=W L=L f=f0
+X_PP_MUX_l0_1   x0 gnd! slct_0_m1 slct_0_m2 slct_0_0 slct_0_p1 slct_0_p2 B0 B0_bar PP_MUX_out_lvt W=W L=L f=f0
+X_PP_MUX_l0_2   x1 x0 slct_0_m1 slct_0_m2 slct_0_0 slct_0_p1 slct_0_p2 A1 A1_bar PP_MUX_out_lvt W=W L=L f=f0
 X_PP_MUX_l0_3   x2 x1 slct_0_m1 slct_0_m2 slct_0_0 slct_0_p1 slct_0_p2 s_l0_1 s_l0_1_bar PP_MUX_lvt W=W L=L f=f0
 X_PP_MUX_l0_4   x3 x2 slct_0_m1 slct_0_m2 slct_0_0 slct_0_p1 slct_0_p2 s_l0_2 s_l0_2_bar PP_MUX_lvt W=W L=L f=f0
 X_PP_MUX_l0_5   x4 x3 slct_0_m1 slct_0_m2 slct_0_0 slct_0_p1 slct_0_p2 s_l0_3 s_l0_3_bar PP_MUX_lvt W=W L=L f=f0
@@ -52,8 +54,8 @@ R_s_l0_10_bar s_l0_8 s_l0_10_bar r=0
 ** intermidaites: s_l1[9:1], s_l1_bar[9:1], c_l1[9:1], c_l1_bar[9:1]
 
 X_ADD_l1_0      slct_1_m1 slct_1_m2 slct_1_0 slct_1_p1 slct_1_p2 A2 A2_bar ADD_lvt W=W L=L f=f1
-X_PP_HA_l1_1    s_l0_1 s_l0_1_bar x0 gnd! slct_1_m1 slct_1_m2 slct_1_0 slct_1_p1 slct_1_p2 B2 B2_bar A3 A3_bar PP_HA_lvt W=W L=L f=f1
-X_PP_HA_l1_2    s_l0_2 s_l0_2_bar x1 x0 slct_1_m1 slct_1_m2 slct_1_0 slct_1_p1 slct_1_p2 B3 B3_bar c_l1_1 c_l1_1_bar PP_HA_lvt W=W L=L f=f1
+X_PP_HA_l1_1    s_l0_1 s_l0_1_bar x0 gnd! slct_1_m1 slct_1_m2 slct_1_0 slct_1_p1 slct_1_p2 B2 B2_bar A3 A3_bar PP_HA_out_lvt W=W L=L f=f1
+X_PP_HA_l1_2    s_l0_2 s_l0_2_bar x1 x0 slct_1_m1 slct_1_m2 slct_1_0 slct_1_p1 slct_1_p2 B3 B3_bar c_l1_1 c_l1_1_bar PP_HA_out_lvt W=W L=L f=f1
 X_PP_HA_l1_3    s_l0_3 s_l0_3_bar x2 x1 slct_1_m1 slct_1_m2 slct_1_0 slct_1_p1 slct_1_p2 s_l1_1 s_l1_1_bar c_l1_2 c_l1_2_bar PP_HA_lvt W=W L=L f=f1
 X_PP_HA_l1_4    s_l0_4 s_l0_4_bar x3 x2 slct_1_m1 slct_1_m2 slct_1_0 slct_1_p1 slct_1_p2 s_l1_2 s_l1_2_bar c_l1_3 c_l1_3_bar PP_HA_lvt W=W L=L f=f1
 X_PP_HA_l1_5    s_l0_5 s_l0_5_bar x4 x3 slct_1_m1 slct_1_m2 slct_1_0 slct_1_p1 slct_1_p2 s_l1_3 s_l1_3_bar c_l1_4 c_l1_4_bar PP_HA_lvt W=W L=L f=f1
@@ -71,8 +73,8 @@ R_s_l1_9_bar gnd! s_l1_9_bar r=0
 ** intermidaites: s_l2[9:1], s_l2_bar[9:1], c_l2[8:1], c_l2_bar[8:1]
 
 X_ADD_l2_0      slct_2_m1 slct_2_m2 slct_2_0 slct_2_p1 slct_2_p2 A4 A4_bar ADD_lvt W=W L=L f=f2
-X_PP_FA_l2_1    s_l1_1 s_l1_1_bar c_l1_1 c_l1_1_bar x0 gnd! slct_2_m1 slct_2_m2 slct_2_0 slct_2_p1 slct_2_p2 B4 B4_bar A5 A5_bar PP_FA_lvt W=W L=L f=f2
-X_PP_FA_l2_2    s_l1_2 s_l1_2_bar c_l1_2 c_l1_2_bar x1 x0 slct_2_m1 slct_2_m2 slct_2_0 slct_2_p1 slct_2_p2 B5 B5_bar c_l2_1 c_l2_1_bar PP_FA_lvt W=W L=L f=f2
+X_PP_FA_l2_1    s_l1_1 s_l1_1_bar c_l1_1 c_l1_1_bar x0 gnd! slct_2_m1 slct_2_m2 slct_2_0 slct_2_p1 slct_2_p2 B4 B4_bar A5 A5_bar PP_FA_out_lvt W=W L=L f=f2
+X_PP_FA_l2_2    s_l1_2 s_l1_2_bar c_l1_2 c_l1_2_bar x1 x0 slct_2_m1 slct_2_m2 slct_2_0 slct_2_p1 slct_2_p2 B5 B5_bar c_l2_1 c_l2_1_bar PP_FA_out_lvt W=W L=L f=f2
 X_PP_FA_l2_3    s_l1_3 s_l1_3_bar c_l1_3 c_l1_3_bar x2 x1 slct_2_m1 slct_2_m2 slct_2_0 slct_2_p1 slct_2_p2 s_l2_1 s_l2_1_bar c_l2_2 c_l2_2_bar PP_FA_lvt W=W L=L f=f2
 X_PP_FA_l2_4    s_l1_4 s_l1_4_bar c_l1_4 c_l1_4_bar x3 x2 slct_2_m1 slct_2_m2 slct_2_0 slct_2_p1 slct_2_p2 s_l2_2 s_l2_2_bar c_l2_3 c_l2_3_bar PP_FA_lvt W=W L=L f=f2
 X_PP_FA_l2_5    s_l1_5 s_l1_5_bar c_l1_5 c_l1_5_bar x4 x3 slct_2_m1 slct_2_m2 slct_2_0 slct_2_p1 slct_2_p2 s_l2_3 s_l2_3_bar c_l2_4 c_l2_4_bar PP_FA_lvt W=W L=L f=f2
@@ -90,8 +92,8 @@ R_s_l2_9_bar gnd! s_l2_9_bar r=0
 ** intermidaites: s_l3[8:1], s_l3_bar[8:1], c_l3[8:1], c_l3_bar[8:1]
 
 X_ADD_l3_0      slct_3_m1 slct_3_m2 slct_3_0 slct_3_p1 slct_3_p2 A6 A6_bar ADD_lvt W=W L=L f=f3
-X_PP_FA_l3_1    s_l2_1 s_l2_1_bar c_l2_1 c_l2_1_bar x0 gnd! slct_3_m1 slct_3_m2 slct_3_0 slct_3_p1 slct_3_p2 B6 B6_bar A7 A7_bar PP_FA_lvt W=W L=L f=f3
-X_PP_FA_l3_2    s_l2_2 s_l2_2_bar c_l2_2 c_l2_2_bar x1 x0 slct_3_m1 slct_3_m2 slct_3_0 slct_3_p1 slct_3_p2 B7 B7_bar c_l3_1 c_l3_1_bar PP_FA_lvt W=W L=L f=f3
+X_PP_FA_l3_1    s_l2_1 s_l2_1_bar c_l2_1 c_l2_1_bar x0 gnd! slct_3_m1 slct_3_m2 slct_3_0 slct_3_p1 slct_3_p2 B6 B6_bar A7 A7_bar PP_FA_out_lvt W=W L=L f=f3
+X_PP_FA_l3_2    s_l2_2 s_l2_2_bar c_l2_2 c_l2_2_bar x1 x0 slct_3_m1 slct_3_m2 slct_3_0 slct_3_p1 slct_3_p2 B7 B7_bar c_l3_1 c_l3_1_bar PP_FA_out_lvt W=W L=L f=f3
 X_PP_FA_l3_3    s_l2_3 s_l2_3_bar c_l2_3 c_l2_3_bar x2 x1 slct_3_m1 slct_3_m2 slct_3_0 slct_3_p1 slct_3_p2 s_l3_1 s_l3_1_bar c_l3_2 c_l3_2_bar PP_FA_lvt W=W L=L f=f3
 X_PP_FA_l3_4    s_l2_4 s_l2_4_bar c_l2_4 c_l2_4_bar x3 x2 slct_3_m1 slct_3_m2 slct_3_0 slct_3_p1 slct_3_p2 s_l3_2 s_l3_2_bar c_l3_3 c_l3_3_bar PP_FA_lvt W=W L=L f=f3
 X_PP_FA_l3_5    s_l2_5 s_l2_5_bar c_l2_5 c_l2_5_bar x4 x3 slct_3_m1 slct_3_m2 slct_3_0 slct_3_p1 slct_3_p2 s_l3_3 s_l3_3_bar c_l3_4 c_l3_4_bar PP_FA_lvt W=W L=L f=f3
