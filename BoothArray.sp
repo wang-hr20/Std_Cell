@@ -39,7 +39,7 @@ X_PP_MUX_l0_6   x5 x4 slct_0_m1 slct_0_m2 slct_0_0 slct_0_p1 slct_0_p2 s_l0_4 s_
 X_PP_MUX_l0_7   x6 x5 slct_0_m1 slct_0_m2 slct_0_0 slct_0_p1 slct_0_p2 s_l0_5 s_l0_5_bar PP_MUX W=W L=L f=f0
 X_PP_MUX_l0_8   x7 x6 slct_0_m1 slct_0_m2 slct_0_0 slct_0_p1 slct_0_p2 s_l0_6 s_l0_6_bar PP_MUX W=W L=L f=f0
 X_PP_MUX_l0_9   x8 x7 slct_0_m1 slct_0_m2 slct_0_0 slct_0_p1 slct_0_p2 s_l0_7 s_l0_7_bar PP_MUX W=W L=L f=f0
-X_PP_MUX_l0_10  x9 x8 slct_0_m1 slct_0_m2 slct_0_0 slct_0_p1 slct_0_p2 s_l0_8 s_l0_8_bar PP_MUX W=W L=L f=f0
+X_PP_MUX_l0_10  gnd! x8 slct_0_m1 slct_0_m2 slct_0_0 slct_0_p1 slct_0_p2 s_l0_8 s_l0_8_bar PP_MUX W=W L=L f=f0
 
 R_s_l0_9 s_l0_8 s_l0_9 r=0
 R_s_l0_9_bar s_l0_8_bar s_l0_9_bar r=0

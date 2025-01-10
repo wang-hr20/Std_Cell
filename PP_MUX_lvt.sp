@@ -10,8 +10,8 @@
 .include ./TranGate_lvt.sp
 
 ** input inverters
-X_I1        X_im1   X_im1_inv                       Inv_hvt         W=W   L=L   f=f
-X_I2        X_i     X_i_inv                         Inv_hvt         W=W   L=L   f=f
+X_I1        X_im1   X_im1_inv                       Inv_lvt         W=W   L=L   f=f
+X_I2        X_i     X_i_inv                         Inv_lvt         W=W   L=L   f=f
 X_Inv_m1    slct_m1 slct_m1_inv                     Inv_lvt         W=W   L=L   f=f
 X_Inv_m2    slct_m2 slct_m2_inv                     Inv_lvt         W=W   L=L   f=f
 X_Inv_0     slct_0  slct_0_inv                      Inv_lvt         W=W   L=L   f=f
