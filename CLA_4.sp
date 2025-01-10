@@ -1,4 +1,4 @@
-.subckt CLA_4 A0 A1 A2 A3 B0 B1 B2 B3 A0_bar A1_bar A2_bar A3_bar B0_bar B1_bar B2_bar B3_bar Cin Cin_bar S0 S1 S2 S3 Cout Co0 Co1 Co2  G0 G1 G2 G3 P0 P1 P2 P3 Co0_bar Co1_bar Co2_bar Co3_bar W=120n L=40n f=1
+.subckt CLA_4 A0 A1 A2 A3 B0 B1 B2 B3 A0_bar A1_bar A2_bar A3_bar B0_bar B1_bar B2_bar B3_bar Cin Cin_bar S0 S1 S2 S3 Cout Cout_bar W=120n L=40n f=1
 
 ** 4bit carry lookahead adder, using lvt transistors
 
@@ -40,7 +40,7 @@ X_INV7 P3 P3_bar Inv_lvt f=1
 X_Mp0_1 vdd!  G0  Co0_1   vdd! plvt11ll_ckt W='W*4' L=L
 X_Mp0_2 Co0_1 Cin Co0_bar vdd! plvt11ll_ckt W='W*4' L=L
 X_Mp0_3 Co0_1 P0  Co0_bar vdd! plvt11ll_ckt W='W*4' L=L
-X_Mn0_1 gnd!  G0  Co0_bar gnd! nlvt11ll_ckt W='W*2'    L=L
+X_Mn0_1 gnd!  G0  Co0_bar gnd! nlvt11ll_ckt W='W*2' L=L
 X_Mn0_2 gnd!  Cin Co0_2   gnd! nlvt11ll_ckt W='W*4' L=L
 X_Mn0_3 Co0_2 P0  Co0_bar gnd! nlvt11ll_ckt W='W*4' L=L
 
@@ -97,6 +97,7 @@ X_INV0 Co0_bar Co0 Inv_lvt f=1
 X_INV1 Co1_bar Co1 Inv_lvt f=1
 X_INV2 Co2_bar Co2 Inv_lvt f=1
 X_INV3 Co3_bar Cout Inv_lvt f=1
+X_INV4 Cout Cout_bar Inv_lvt f=1
 
 ** Generate S
 X_XR4 H0 H0_bar Cin Cin_bar S0 S0_bar XR_lvt f=1
